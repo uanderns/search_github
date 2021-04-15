@@ -39,6 +39,7 @@ function App() {
             </div>
         </div>
       </form>
+
       <div className="py-3">
         {!userData &&(
           <img src = {GithubImage} className="responsive rounded-circle" 
@@ -51,16 +52,14 @@ function App() {
           alt="" height="200px"/>
        
        <h1 className="pt-3">
-         <a href="{userData.html_url}" target="_new">
+         <a href={userData.html_url} target="_new">
            {userData.name}
            </a>
        </h1>
        <h3>{userData.location}</h3>
        <h3>{userData.bio}</h3>
        <p>
-         <a href="{userData.blog}" target="_new" className="text-info"> 
           {userData.blog}
-         </a>
        </p>
         </div>
            )}      
