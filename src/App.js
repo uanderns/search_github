@@ -51,7 +51,7 @@ function App() {
           alt="" height="200px"/>
        
        <h1 className="pt-3">
-         <a href="https://github.com/uanderns" target="_new">
+         <a href="{userData.html_url}" target="_new">
            {userData.name}
            </a>
        </h1>
